@@ -1,0 +1,15 @@
+"""
+✅ Purpose Comparison
+Feature	                            pickle	                                dill	                                                joblib
+🔍 Purpose	                        General Python serialization	        Enhanced serialization (even lambdas, closures)	        Efficient object persistence, large arrays, scikit-learn
+🧠 Object Support	                Most Python objects	                    Almost all Python objects	                            Python objects + optimized for NumPy
+🧮 NumPy Efficiency	                ❌ Not optimized	                        ❌ Not optimized	                                        ✅ Highly optimized
+💡 Advanced Functions	            ❌ No lambdas/closures	                ✅ Lambdas, closures, generators	                        ❌ (Same as pickle)
+🔐 Security	                        ⚠️ Vulnerable to code injection	        ⚠️ Same as pickle	                                      ⚠️ Same as pickle
+📦 Output Type	                    .pkl	                                .pkl or .dill	                                         .joblib
+🔁 Cross-platform	                ✅ Mostly	                            ✅ Mostly	                                         ✅ Mostly
+⚙️ Use in ML	                    ✅ Rare	                                ✅ Rare, if using custom logic	                    ✅ Standard in scikit-learn
+🧵 Parallel Support	                ❌	                                    ❌	                                                ✅ via joblib.Parallel
+🛠 Custom Functions	                ❌	                                    ✅ (like closures, nested defs)	                        ❌
+🔁 Session State Save	            ❌	                                    ✅ dill.dump_session()	                                ❌
+"""
