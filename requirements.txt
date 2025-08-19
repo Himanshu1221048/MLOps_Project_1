@@ -19,17 +19,3 @@ uvicorn
 jinja2
 imblearn
 -e .
-
-"""
-🔍 Special Line: -e .
-
-This means:
-
-    “Install the project in editable mode using the setup.py file in the current directory (.).”
-
-Editable mode:
-
-    Lets you make code changes without reinstalling the package.
-
-    Great for development: changes in src/ are reflected instantly.
-"""
